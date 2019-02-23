@@ -1,0 +1,51 @@
+// HEADER
+.header {
+	position: absolute;
+	top: 4%;
+	width: 100%;
+	z-index: 5000;
+	&__container {
+		position: relative;
+	}
+	&__block {
+		width: 80%;
+		position: absolute;
+		padding: 30px 60px;
+		border-radius: 50px;
+		margin: 0 50px;
+		background: url("../images/header-bar_bg.png") 50% 50% no-repeat;
+		background-size: cover;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__link {
+		font-family: "Roboto", sans-serif;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		&__block {
+			width: 95%;
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+}
+@media screen and (max-width: 575px) {
+	.header {
+		&__link {
+			font-size: 16px;
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	.header__block {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}

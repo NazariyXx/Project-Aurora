@@ -1,0 +1,19 @@
+// VIDEO
+.video {
+	&__box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+	}
+	&__frame {
+		width: 854px;
+		height: 480px;
+		border: 1px solid #000;
+	}
+}
+
+// @media screen and (max-width: ) {
+	
+// }

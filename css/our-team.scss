@@ -1,0 +1,136 @@
+// OUR-TEAM
+.our-team {
+	margin-bottom: 100px;
+	.container {position: relative;}
+	&__content {
+		margin: 0 auto;
+	}
+	&__img {
+		width: 100%;
+		position: absolute;
+		z-index: -1;
+		top: 70px;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin: auto;
+		margin-right: 3%;
+	}
+	&__headline {
+		text-align: center;
+		margin-bottom: 50px;
+		h2 {
+			font-family: "Roboto", sans-serif;
+			font-size: 50px;
+			text-transform: capitalize;
+			width: 50%;
+			border: 1px solid #949799;
+			border-radius: 40px;
+			padding: 10px;
+			margin: 0 auto;
+			box-shadow: 0px 2px 5px 3px rgba(148,151,153,0.2);
+			background-color: #fff;
+		}
+	}
+	&__container {
+		width: 100%;
+		margin: auto;
+	}
+	&__col {
+		display: flex;
+	}
+	&__item {
+		position: relative;
+		width: 100%;
+		height: auto;
+		min-height: 350px;
+		background: url("../images/maxym-sitnikov.png") 50% 50% no-repeat;
+		background-size: cover;
+		border-radius: 40px;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: auto;
+		min-height: 40px;
+		border: 2px solid #000;
+		background-color: #fff;
+		border-radius: 40px 40px 0 0;
+		span {
+			font: 20px "Roboto", sans-serif;
+			color: #000;
+			text-transform: capitalize;
+			text-decoration: underline;
+		}
+	}
+	&__position {
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: 72%;
+		height: auto;
+		min-height: 50px;
+		border: 2px solid #000;
+		border-radius: 40px;
+		background-color: #fff;
+		text-align: center;
+		padding: 10px;
+		span {
+			font: 35px "Roboto", sans-serif;
+			text-transform: capitalize;
+			color: #000;
+		}
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.our-team {
+		&__position {
+			width: 90%;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.our-team {
+		&__headline {
+			h2 {
+				width: 70%;	
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.our-team {
+		&__headline {
+			margin-bottom: 50px;
+			h2 {
+				width: 100%;	
+			}
+		}
+		&__item {
+			min-height: 600px;
+			margin-bottom: 30px;
+		}
+		&__img {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.our-team {
+		&__headline {
+			h2 {
+				font-size: 38px;
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+// SMALL-BLOCKS
+@media screen and (min-width: 992px) {
+	.offset-lg-1_5 {
+		margin-left: 12.4999995%;
+	}
+}
+
+// order-btn
+.order-btn {
+	text-align: center;
+	text-transform: uppercase;
+	button {
+		font-family: "Roboto", sans-serif;
+		font-size: 56px;
+		color: #000;
+		text-decoration: underline;
+		text-transform: uppercase;
+		height: auto;
+		min-height: 160px;
+		padding: 0 90px;
+		border-radius: 30px;
+		background: linear-gradient(90deg, #ffc600, #f3ff00);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.order-btn {
+		button {
+			font-size: 42px;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.order-btn {
+		button {
+			font-size: 32px;
+			padding: 0 35px;
+			min-height: 120px;
+		}
+	}
+}
+
+// up-to-top
+
+.up-to-top {
+	transition: all .5s ease-in-out;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border: 2px solid #000;
+	border-radius: 50%;
+	bottom: -60px;
+	right: 20px;
+	cursor: pointer;
+	.fa-angle-up {
+		font-size: 40px;
+		color: #000;
+	}
+}

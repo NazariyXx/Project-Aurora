@@ -1,0 +1,52 @@
+/*RESET*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	&:hover {
+		color: $link-active;
+		text-decoration: none;
+		transition: .3s ease-in-out;
+	}
+	&:active,&:focus {
+		outline: none;
+	}
+	color: $link;
+	text-decoration: none;
+	transition: .3s ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6, p {margin-bottom: 0;}
+
+ul, li, ul>li {
+	list-style-type: none;
+}
+ul {margin-bottom: 0;}
+button {
+	background: none;
+	border: none;
+	&:active,&:focus {
+		outline: none;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+input, input:hover, input:active {
+	outline: none;
+}
+input[type="button"], input[type="submit"] {
+	cursor: pointer;
+	background: transparent;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
