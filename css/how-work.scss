@@ -2,7 +2,6 @@
 .how-work {
 	position: relative;
 	padding-top: 350px;
-	margin-bottom: 200px;
 	&__drops {
 		position: absolute;
 		top: 0;
@@ -15,19 +14,7 @@
 		}
 	}
 	&__headline {
-		text-align: center;
 		margin-bottom: 190px;
-		h2 {
-			font-family: "Roboto", sans-serif;
-			font-size: 50px;
-			text-transform: capitalize;
-			width: 40%;
-			border: 1px solid #949799;
-			border-radius: 40px;
-			padding: 10px;
-			margin: 0 auto;
-			box-shadow: 0px 2px 5px 3px rgba(148,151,153,0.2);
-		}
 	}
 	&__card {
 		width: 100%;
@@ -56,13 +43,45 @@
 	}
 	&__description {
 		font-family: "Myriad-Pro-Regular", sans-serif;
-		font-size: 24px;
 		color: #000;
 		background-color: #fff;
 		height: 100%;
 		border: 1px solid #000;
 		border-radius: 50px;
-		padding: 5px 30px;
+		padding: 10px 30px;
+		text-align: center;
+		h5 {
+			height: 100%;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			display: inline-block;
+			border: 3px solid #000;
+			font-size: 30px;
+			background-color: #fff;
+			border-radius: 50px;
+			padding: 0 30px;
+			vertical-align: middle;
+			&:first-letter {
+				text-transform: uppercase;
+			}
+		}
+		li, a {
+			font-family: "Myriad-Pro-Regular", sans-serif;
+			color: #000;
+			font-size: 24px;
+		}
+		li {
+			&:nth-child(odd) {padding-top: 15px;}
+		}
+		a {
+			color: $link-active;
+			&:hover {
+				color: #ffc600;
+			}
+		}
+		p {
+			font-size: 24px;
+		}	
 	}
 }
 
@@ -72,11 +91,6 @@
 		&__drops {
 			display: none;
 			&--small {display: block;}
-		}
-		&__headline {
-			h2 {
-				width: 70%;	
-			}
 		}
 		&__card {
 			width: 80%;
@@ -90,9 +104,6 @@
 	.how-work {
 		&__headline {
 			margin-bottom: 50px;
-			h2 {
-				width: 100%;	
-			}
 		}
 		&__card {
 			width: 100%;

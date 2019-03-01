@@ -17,20 +17,7 @@
 		margin-right: 3%;
 	}
 	&__headline {
-		text-align: center;
 		margin-bottom: 50px;
-		h2 {
-			font-family: "Roboto", sans-serif;
-			font-size: 50px;
-			text-transform: capitalize;
-			width: 50%;
-			border: 1px solid #949799;
-			border-radius: 40px;
-			padding: 10px;
-			margin: 0 auto;
-			box-shadow: 0px 2px 5px 3px rgba(148,151,153,0.2);
-			background-color: #fff;
-		}
 	}
 	&__container {
 		width: 100%;
@@ -44,12 +31,37 @@
 		width: 100%;
 		height: auto;
 		min-height: 350px;
-		background: url("../images/maxym-sitnikov.jpeg") 50% 50% no-repeat;
+		background: 50% 0 no-repeat;
 		background-size: cover;
 		border-radius: 40px;
+		cursor: pointer;
 		&:not(:last-child) {
 			margin-bottom: 30px;
 		}
+		&:hover {
+			background-position: 50% 100%;
+		}
+	}
+	&__nazariy {
+		background-image: url("../images/team/nazariy.jpeg");
+	}
+	&__yefym {
+		background-image: url("../images/team/yefym.jpeg");
+	}
+	&__maxym {
+		background-image: url("../images/team/maxym.jpeg");
+	}
+	&__dmytro {
+		background-image: url("../images/team/dmytro.jpeg");
+	}
+	&__taras {
+		background-image: url("../images/team/taras.jpeg");
+	}
+	&__oleksandr {
+		background-image: url("../images/team/oleksandr.jpeg");
+	}
+	&__bohdan {
+		background-image: url("../images/team/bohdan.jpeg");
 	}
 	&__info {
 		display: flex;
@@ -97,27 +109,17 @@
 	}
 }
 
-@media screen and (max-width: 991px) {
-	.our-team {
-		&__headline {
-			h2 {
-				width: 70%;	
-			}
-		}
-	}
-}
-
 @media screen and (max-width: 767px) {
 	.our-team {
 		&__headline {
 			margin-bottom: 50px;
-			h2 {
-				width: 100%;	
-			}
 		}
 		&__item {
-			min-height: 600px;
+			background-position-y: 7%;
 			margin-bottom: 30px;
+			&:hover {
+				background-position-y: 75%;
+			}
 		}
 		&__img {
 			display: none;

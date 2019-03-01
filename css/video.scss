@@ -1,5 +1,22 @@
 // VIDEO
 .video {
+	margin-top: 200px;
+	position: relative;
+	background-color: #000;
+	&__img {
+		&-top, &-bottom {
+			width: 100%;
+			height: auto;
+			position: absolute;
+			z-index: -5;
+		}
+		&-top {
+			top: -38%;
+		}
+		&-bottom {
+			bottom: -38%;
+		}
+	}
 	&__box {
 		display: flex;
 		align-items: center;
@@ -14,6 +31,51 @@
 	}
 }
 
-// @media screen and (max-width: ) {
-	
-// }
+@media screen and (max-width: 1199px) {
+	.video {
+		&__img {
+			&-top {
+				top: -30%;
+			}
+			&-bottom {
+				bottom: -30%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.video {
+		&__img {
+			&-top {
+				top: -24%;
+			}
+			&-bottom {
+				bottom: -24%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.video {
+		&__img {
+			&-top {
+				top: -18%;
+			}
+			&-bottom {
+				bottom: -18%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 575px) {
+	.video {
+		&__img {
+			&-top {
+				top: -10%;
+			}
+			&-bottom {
+				bottom: -10%;
+			}
+		}
+	}
+}
