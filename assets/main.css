@@ -987,6 +987,27 @@ input::-webkit-inner-spin-button {
   display: inline-block;
   position: relative;
 }
+.modal .form__btn .fa-telegram-plane {
+  width: 52px;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: linear-gradient(45deg, #09e5fd 0%, #ff00ec 100%);
+  padding-left: 6px;
+  font-size: 40px;
+  color: #000;
+  cursor: pointer;
+}
 .modal .form__user-name {
   width: 70%;
 }

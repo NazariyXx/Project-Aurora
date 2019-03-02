@@ -86,7 +86,22 @@
 				display: inline-block;
 				position: relative;
 			}
-			
+			.fa-telegram-plane {
+				width: 52px;
+				height: 52px;
+				display: flex;
+				align-items: center;
+				border-radius: 50%;
+				position: absolute;
+				right: -20px;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				background: linear-gradient(45deg, #09e5fd 0%,#ff00ec 100%);
+				padding-left: 6px;
+				font-size: 40px;
+				color: #000;
+				cursor: pointer;
+			}
 		}
 
 		&__user-name {width: 70%;}
