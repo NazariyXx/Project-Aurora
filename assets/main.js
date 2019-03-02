@@ -35,11 +35,16 @@ $(document).ready(function() {
 	};
 
 //  ----- HEIGHT OF PROJECTS CONTAINER -----
-	
-	let heightOfProjectItem      = document.getElementsByClassName("projects__item")[0].offsetHeight,
-		heightOfProjectContainer = document.getElementsByClassName("projects__container")[0];
+	function heightOfProjectsContainer() {
+		let heightOfProjectImg       = document.getElementsByClassName("projects__img")[0].offsetHeight,
+			heightOfProjectContainer = document.getElementsByClassName("projects__container")[0];
 
-	heightOfProjectContainer.style.height = heightOfProjectItem + 6 + 'px';
+		heightOfProjectImg += 36;
+		heightOfProjectContainer.style.height = heightOfProjectImg + 'px';
+	}
+	let checkOfLoadProjectImg = document.getElementsByClassName("projects__img")[0];
+
+	checkOfLoadProjectImg.onload = heightOfProjectsContainer();
 
 //  ----- SHOW/HIDE PROJECTS ------
 	let getAll     = document.getElementById("btn-all"),
