@@ -56,8 +56,19 @@
 	}
 }
 
+@media screen and (max-width: 1199px) {
+	.projects {
+		&__container {
+			height: 324px;
+		}
+	}
+}
+
 @media screen and (max-width: 991px) {
 	.projects {
+		&__container {
+			height: 244px;
+		}
 		&__type {
 			&:not(:last-child) {
 				margin-right: 20px;
@@ -68,6 +79,9 @@
 
 @media screen and (max-width: 767px) {
 	.projects {
+		&__container {
+			height: 275px;
+		}
 		&__type {
 			&:not(:last-child) {
 				margin-right: 10px;
@@ -81,7 +95,8 @@
 @media screen and (max-width: 575px) {
 	.projects {
 		&__container {
-			height: 135px;
+			height: 200px;
+			height: calc(100vw / 2.3);
 		}
 		&__type {
 			&__list {
@@ -98,11 +113,6 @@
 		&__btn {
 			width: 100%;
 		}
-	}
-}
-
-@media screen and (max-width: 575px) {
-	.projects {
 		&__item {
 			text-align: center;
 		}

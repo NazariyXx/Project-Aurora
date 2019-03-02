@@ -34,18 +34,6 @@ $(document).ready(function() {
 		};
 	};
 
-//  ----- HEIGHT OF PROJECTS CONTAINER -----
-	function heightOfProjectsContainer() {
-		let heightOfProjectImg       = document.getElementsByClassName("projects__img")[0].offsetHeight,
-			heightOfProjectContainer = document.getElementsByClassName("projects__container")[0];
-
-		heightOfProjectImg += 36;
-		heightOfProjectContainer.style.height = heightOfProjectImg + 'px';
-	}
-	let checkOfLoadProjectImg = document.getElementsByClassName("projects__img")[0];
-
-	checkOfLoadProjectImg.onload = heightOfProjectsContainer();
-
 //  ----- SHOW/HIDE PROJECTS ------
 	let getAll     = document.getElementById("btn-all"),
 		getLogo    = document.getElementById("btn-logo"),

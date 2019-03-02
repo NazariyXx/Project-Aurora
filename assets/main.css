@@ -586,12 +586,23 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
+@media screen and (max-width: 1199px) {
+  .projects__container {
+    height: 324px;
+  }
+}
 @media screen and (max-width: 991px) {
+  .projects__container {
+    height: 244px;
+  }
   .projects__type:not(:last-child) {
     margin-right: 20px;
   }
 }
 @media screen and (max-width: 767px) {
+  .projects__container {
+    height: 275px;
+  }
   .projects__type:not(:last-child) {
     margin-right: 10px;
   }
@@ -601,7 +612,8 @@ input::-webkit-inner-spin-button {
 }
 @media screen and (max-width: 575px) {
   .projects__container {
-    height: 135px;
+    height: 200px;
+    height: calc(100vw / 2.3);
   }
   .projects__type__list {
     width: 50%;
@@ -619,8 +631,6 @@ input::-webkit-inner-spin-button {
   .projects__btn {
     width: 100%;
   }
-}
-@media screen and (max-width: 575px) {
   .projects__item {
     text-align: center;
   }
