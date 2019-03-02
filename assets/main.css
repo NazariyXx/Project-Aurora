@@ -1007,6 +1007,7 @@ input::-webkit-inner-spin-button {
   font-size: 40px;
   color: #000;
   cursor: pointer;
+  /**/
 }
 .modal .form__user-name {
   width: 70%;
