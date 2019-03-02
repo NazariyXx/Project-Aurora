@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="SHORTCUT ICON" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Smart City</title>
+  </head>
+  <body>
+    <header>
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-4 header__logo">
+    				<a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+    			</div>
+    			<div class="col-lg-8 header__nav">
+    				<nav class="navbar navbar-expand-lg navbar-light">
+    					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar__content" aria-controls="navbar__content" aria-expanded="false" aria-label="Toggle navigation">
+			            	<span class="navbar-toggler-icon"></span>
+			          	</button>
+			          	<div class="collapse navbar-collapse" id="navbar__content">
+				            <ul class="nav">
+				              <li class="nav-item">
+				                <a class="nav-link active" href="https://smugii.github.io/">Головна</a>
+				              </li>
+				              <li class="nav-item">
+				                <a class="nav-link" href="#aboutUs">Про нас</a>
+				              </li>
+				              <li class="nav-item">
+				                <a class="nav-link" href="#prices">Ціни</a>
+				              </li>
+				              <li class="nav-item">
+				                <a class="nav-link" href="#video">Відео</a>
+				              </li>
+				              <li class="nav-item">
+				                <a class="nav-link" href="#location">Наш офіс</a>
+				              </li>
+				              <li class="nav-item">
+				                <a class="nav-link" href="#contacts">Контакти</a>
+				              </li>
+				            </ul>
+			          	</div>
+    				</nav>
+    			</div>
+    		</div>
+    	</div>
+    </header>
+
+	<div class="technology">
+		<div class="container">
+	  		<div class="row">
+	  			<div class="col">
+	  				<div class="img-centered">
+	  					<img class="img-fluid" src="images/technology.jpg" alt="Technology">
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</div>
+	</div>
+
+	<div class="container main-article">
+		<div class="row aboutUs">
+			<div class="col">
+				<h2 id="aboutUs" class="aboutUs__head">Про нас</h2>
+				<p class="aboutUs__description"><span class="aboutUs__logo"><a href="https://smugii.github.io/">Smart City</a></span> - це компанія, яка розробляє "Розумні панелі".</p>
+
+				<p class="aboutUs__description">Наші панелі мають безліч можливостей.</p>
+
+				<ul class="aboutUs__list">
+					<li class="aboutUs__item">Рейтинг культурно-туристичних місць та закладів, який дає змогу жителям та гостям міста вибрати найбільш підходящий варіант. </li>
+					<li class="aboutUs__item">Панель дає можливість отримати більш детальну інформацію про заклад. А саме, відгуки та оцінки інших користуватачів, а також загальну середню оцінку закладу.</li>
+					<li class="aboutUs__item">Вибравши заклад, ви можете викликати таксі, яке приїде до місця розташування Розумної панелі, вам лише потрібно буде залишити свій номер мобільного телефону для того, щоб водій таксі зміг вам подзвонити.</li>
+					<li class="aboutUs__item">Панель допоможе знайти автобус, який зможе довезти вас до місця призначення. </li>
+					<li class="aboutUs__item">Зареєструвавшись у системі і підтвердивши можливість отримувати повідомлення на номер мобільного телефону, вас буде повідомлено про проходження акцій у закладах.</li>
+					<li class="aboutUs__item">Найбільш активним користувачам, що залишатимуть відгуки та оцінки, будуть нараховуватись бонуси від наших закладів-партнерів. Ці бонуси даватимуть змогу часткової оплати послуг, що надають наші заклади-партнери.</li>
+				</ul>
+				<div class="img-centered">
+					<img src="images/smart-table.jpg" alt="Smart table" class="aboutUs__img img-fluid">
+				</div>
+			</div>
+		</div>
+		<div class="row prices">
+			<div class="col">
+				<h2 id="prices" class="prices__head">Ціни</h2>
+				<table class="prices__table">
+				  <tr>
+				    <th>Комплектація</th>
+				    <th>Діагональ монітора</th>
+				    <th>Підключення до інтернету</th>
+				    <th>Ціна</th>
+				  </tr>
+				  <tr>
+				    <td>Mini</td>
+				    <td>21"</td>
+				    <td>Модуль WIFI</td>
+				    <td>18 999</td>
+				  </tr>
+				  <tr>
+				    <td>Standart</td>
+				    <td>32"</td>
+				    <td>Модем TP-Link</td>
+				    <td>26 750</td>
+				  </tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="row video">
+			<div class="col">
+				<h2 class="video__head" id="video">Відео-презентація</h2>
+				<iframe class="video__frame" src="https://www.youtube.com/embed/lt_z3fOoVEE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	
+
+	<section class="location">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 id="location">Наш офіс</h2>
+					<div id="map">
+						<script>
+							function initMap() {
+							  var uluru = {lat: 49.840015, lng: 24.049837};
+							  var map = new google.maps.Map(
+							      document.getElementById('map'), {zoom: 12, center: uluru});
+							  var marker = new google.maps.Marker({position: uluru, map: map});
+							}
+					    </script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row contacts">
+				<div class="col">
+					<h3 id="contacts" class="contacts__head">Наші контакти</h3>
+					<p class="contacts__address-phone">
+						Львів, вулиця Личаківська, 71<br>
+						<a href="tel:+380939256694">+38 (093) 925 - 66 - 94</a>
+					</p>
+					<p class="contacts__time">Ми працюємо з 10:00 до 18:00 (З пн. по сб.)</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+  	
+
+
+
+
+
+
+
+
+
+	
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBip3JRti-kcpyq2noAtpzyfMHXKbeht04&callback=initMap">
+    </script>
+  </body>
+</html>
