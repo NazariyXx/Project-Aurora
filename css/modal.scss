@@ -86,23 +86,21 @@
 				display: inline-block;
 				position: relative;
 			}
-			.form__user-btn__ico {
+			.fa-telegram-plane {
 				width: 52px;
 				height: 52px;
 				display: flex;
 				align-items: center;
-				justify-content: center;
 				border-radius: 50%;
 				position: absolute;
 				right: -20px;
 				top: 50%;
 				transform: translate(-50%, -50%);
 				background: linear-gradient(45deg, #09e5fd 0%,#ff00ec 100%);
-				i {
-					margin-right: 4px;
-					font-size: 40px;
-					color: #000;
-				}
+				padding-left: 6px;
+				font-size: 40px;
+				color: #000;
+				cursor: pointer;
 			}
 		}
 
