@@ -31,7 +31,7 @@
 		width: 100%;
 		height: auto;
 		min-height: 350px;
-		background: 50% 0 no-repeat;
+		background: 50% -5% no-repeat;
 		background-size: cover;
 		border-radius: 40px;
 		cursor: pointer;
@@ -39,7 +39,7 @@
 			margin-bottom: 30px;
 		}
 		&:hover {
-			background-position: 50% 100%;
+			background-position: 50% 95%;
 		}
 	}
 	&__nazariy {
@@ -103,8 +103,29 @@
 
 @media screen and (max-width: 1199px) {
 	.our-team {
+		&__item {
+			min-height: 290px;
+			&:hover {
+				background-position-y: -275px;
+			}
+		}
 		&__position {
 			width: 90%;
+			span {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.our-team {
+		&__item {
+			min-height: 290px;
+			background-position-y: -8%;
+			&:hover {
+				background-position-y: -268px;
+			}
 		}
 	}
 }
@@ -117,8 +138,9 @@
 		&__item {
 			background-position-y: 7%;
 			margin-bottom: 30px;
+			min-height: 320px;
 			&:hover {
-				background-position-y: 75%;
+				background-position-y: -777px;
 			}
 		}
 		&__img {
@@ -129,9 +151,36 @@
 
 @media screen and (max-width: 575px) {
 	.our-team {
+		&__item {
+			&:hover {
+				background-position-y: 74%;
+			}
+		}
 		&__headline {
 			h2 {
 				font-size: 38px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.our-team {
+		&__item {
+			background-position-y: 0;
+			&:hover {
+				background-position-y: 77%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.our-team {
+		&__item {
+			background-position-y: -2%;
+			&:hover {
+				background-position-y: -365px;
 			}
 		}
 	}

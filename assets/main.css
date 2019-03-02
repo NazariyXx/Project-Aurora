@@ -55,8 +55,9 @@ button:hover {
   cursor: pointer;
 }
 
-input, input:hover, input:active {
+input, input:hover, input:active, textarea {
   outline: none;
+  border: none;
 }
 
 input[type="button"], input[type="submit"] {
@@ -173,7 +174,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
   top: 4%;
   width: 100%;
-  z-index: 5000;
+  z-index: 150;
 }
 .header__container {
   position: relative;
@@ -546,6 +547,7 @@ input::-webkit-inner-spin-button {
 }
 .projects__container {
   position: relative;
+  height: 384px;
   border: 3px solid #DFDFDF;
   margin-top: 20px;
   overflow-y: scroll;
@@ -598,6 +600,9 @@ input::-webkit-inner-spin-button {
   }
 }
 @media screen and (max-width: 575px) {
+  .projects__container {
+    height: 135px;
+  }
   .projects__type__list {
     width: 50%;
     text-align: center;
@@ -623,7 +628,6 @@ input::-webkit-inner-spin-button {
     width: 80%;
   }
 }
-/*9*/
 .our-team {
   margin-bottom: 100px;
 }
@@ -661,7 +665,7 @@ input::-webkit-inner-spin-button {
   width: 100%;
   height: auto;
   min-height: 350px;
-  background: 50% 0 no-repeat;
+  background: 50% -5% no-repeat;
   background-size: cover;
   border-radius: 40px;
   cursor: pointer;
@@ -670,7 +674,7 @@ input::-webkit-inner-spin-button {
   margin-bottom: 30px;
 }
 .our-team__item:hover {
-  background-position: 50% 100%;
+  background-position: 50% 95%;
 }
 .our-team__nazariy {
   background-image: url("../images/team/nazariy.jpeg");
@@ -737,8 +741,26 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 1199px) {
+  .our-team__item {
+    min-height: 290px;
+  }
+  .our-team__item:hover {
+    background-position-y: -275px;
+  }
   .our-team__position {
     width: 90%;
+  }
+  .our-team__position span {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .our-team__item {
+    min-height: 290px;
+    background-position-y: -8%;
+  }
+  .our-team__item:hover {
+    background-position-y: -268px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -748,17 +770,37 @@ input::-webkit-inner-spin-button {
   .our-team__item {
     background-position-y: 7%;
     margin-bottom: 30px;
+    min-height: 320px;
   }
   .our-team__item:hover {
-    background-position-y: 75%;
+    background-position-y: -777px;
   }
   .our-team__img {
     display: none;
   }
 }
 @media screen and (max-width: 575px) {
+  .our-team__item:hover {
+    background-position-y: 74%;
+  }
   .our-team__headline h2 {
     font-size: 38px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .our-team__item {
+    background-position-y: 0;
+  }
+  .our-team__item:hover {
+    background-position-y: 77%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .our-team__item {
+    background-position-y: -2%;
+  }
+  .our-team__item:hover {
+    background-position-y: -365px;
   }
 }
 .footer {
@@ -820,6 +862,9 @@ input::-webkit-inner-spin-button {
 .footer .link--viber {
   background-color: #8f5db7;
 }
+.footer .link--viber--mobile {
+  display: none;
+}
 .footer .link--google {
   background-color: #DB4437;
 }
@@ -827,9 +872,162 @@ input::-webkit-inner-spin-button {
   margin-right: 80px;
 }
 
+@media screen and (max-width: 991px) {
+  .footer .link--viber {
+    display: none;
+  }
+  .footer__item .link--viber--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 @media screen and (max-width: 575px) {
   .footer__item:not(:last-child) {
     margin-right: 20px;
+  }
+}
+/* MODAL */
+.modal {
+  background-color: #000;
+}
+.modal__img {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.modal__img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal__img-bg {
+  width: 100%;
+  height: auto;
+}
+.modal__img-gif {
+  width: 92%;
+  height: 65%;
+  position: absolute;
+  top: 4.4%;
+  left: 4%;
+}
+.modal-dialog {
+  max-width: 90vw;
+}
+.modal-content {
+  height: auto;
+  min-height: 90vh;
+  padding: 0 !important;
+  border-radius: 140px;
+  background: url("../images/modal-bg.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+.modal__logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.modal__logo img {
+  width: 80%;
+  height: auto;
+}
+.modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.modal__form {
+  width: 100%;
+}
+.modal .form__item {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.modal .form__item input, .modal .form__item textarea {
+  text-align: center;
+  padding: 20px;
+  border-radius: 40px;
+  color: #707070;
+  background-color: #fff;
+}
+.modal .form__item textarea {
+  resize: none;
+  text-align: left;
+}
+.modal .form__btn {
+  text-align: center;
+  margin-top: 30px;
+}
+.modal .form__btn input {
+  font-size: 20px;
+  padding: 15px 90px 15px 20px;
+  color: #707070;
+  border-radius: 40px;
+  background-color: #fff;
+}
+.modal .form__btn-container {
+  display: inline-block;
+  position: relative;
+}
+.modal .form__btn .form__user-btn__ico {
+  width: 52px;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: linear-gradient(45deg, #09e5fd 0%, #ff00ec 100%);
+}
+.modal .form__btn .form__user-btn__ico i {
+  margin-right: 4px;
+  font-size: 40px;
+  color: #000;
+}
+.modal .form__user-name {
+  width: 70%;
+}
+.modal .form__user-number {
+  width: 80%;
+}
+.modal .form__user-mail {
+  width: 90%;
+}
+.modal .form__user-order {
+  width: 100%;
+}
+
+@media screen and (max-width: 575px) {
+  .modal-dialog {
+    max-width: 100vw;
   }
 }
 

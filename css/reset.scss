@@ -41,8 +41,9 @@ button {
 	}
 }
 
-input, input:hover, input:active {
+input, input:hover, input:active, textarea {
 	outline: none;
+	border: none;
 }
 input[type="button"], input[type="submit"] {
 	cursor: pointer;

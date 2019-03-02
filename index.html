@@ -54,15 +54,15 @@
 				</div>
 			</div>
 		</div>
-		<img class="we-are__logo" src="images/logo.jpeg" alt="logo">
+		<a href="index.html"><img class="we-are__logo" src="images/logo.jpeg" alt="logo"></a>
 		<img class="bubles" src="images/bubles.jpeg" alt="bubles">
 	</section>
 
-	<section id="about" class="clickbait">
+	<section class="clickbait">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<div class="clickbait__img">
+					<div id="about" class="clickbait__img">
 						<img src="images/clickbait_img.jpeg" alt="monitor">
 					</div>
 					<div class="clickbait__headline">
@@ -247,7 +247,7 @@
 			<div class="row our-team__content">
 				<div class="our-team__col col-lg-3 col-md-4 offset-lg-1_5">
 					<div class="our-team__container">
-						<div class="our-team__item our-team__nazariy">
+						<div class="our-team__item our-team__item--active our-team__nazariy">
 							<div class="our-team__info">
 								<span class="our-team__pass">nazariy baranovskiy</span>
 							</div>
@@ -255,7 +255,7 @@
 								<span>Front-end</span>
 							</div>
 						</div>
-						<div class="our-team__item our-team__yefym">
+						<div class="our-team__item our-team__item--active our-team__yefym">
 							<div class="our-team__info">
 								<span class="our-team__pass">Yefym Chirochkin</span>
 							</div>
@@ -267,7 +267,7 @@
 				</div>
 				<div class="our-team__col col-lg-3 col-md-4">
 					<div class="our-team__container">
-						<div class="our-team__item our-team__maxym">
+						<div class="our-team__item our-team__item--active our-team__maxym">
 							<div class="our-team__info">
 								<span class="our-team__pass">Maxym Sitnikov</span>
 							</div>
@@ -275,7 +275,7 @@
 								<span>back-end</span>
 							</div>
 						</div>
-						<div class="our-team__item our-team__dmytro">
+						<div class="our-team__item our-team__item--active our-team__dmytro">
 							<div class="our-team__info">
 								<span class="our-team__pass">Dmytro Malon</span>
 							</div>
@@ -283,7 +283,7 @@
 								<span>back-end</span>
 							</div>
 						</div>
-						<div class="our-team__item our-team__taras">
+						<div class="our-team__item our-team__item--active our-team__taras">
 							<div class="our-team__info">
 								<span class="our-team__pass">Taras Yavorivskiy</span>
 							</div>
@@ -295,7 +295,7 @@
 				</div>
 				<div class="our-team__col col-lg-3 col-md-4">
 					<div class="our-team__container">
-						<div class="our-team__item our-team__oleksandr">
+						<div class="our-team__item our-team__item--active our-team__oleksandr">
 							<div class="our-team__info">
 								<span class="our-team__pass">Oleksandr Sachko</span>
 							</div>
@@ -303,7 +303,7 @@
 								<span>web designer</span>
 							</div>
 						</div>
-						<div class="our-team__item our-team__bohdan">
+						<div class="our-team__item our-team__item--active our-team__bohdan">
 							<div class="our-team__info">
 								<span class="our-team__pass">Bohdan Fesyuk</span>
 							</div>
@@ -337,13 +337,14 @@
 				<div class="col">
 					<ul class="footer__social">
 						<li class="footer__item">
-							<a href="https://www.instagram.com/aurora.development/" target="_blank" class="footer__link link--instagram"><i class="fab fa-instagram"></i></a>
+							<a title="Instagram" href="https://www.instagram.com/aurora.development/" target="_blank" class="footer__link link--instagram"><i class="fab fa-instagram"></i></a>
 						</li>
 						<li class="footer__item">
-							<a href="viber://chat?number=+380633413689" target="_blank" class="footer__link link--viber"><i class="fab fa-viber"></i></a>
+							<a title="Viber" href="viber://chat?number=+380633413689" target="_blank" class="footer__link link--viber"><i class="fab fa-viber"></i></a>
+							<a title="Viber" href="viber://add?number=+380633413689" target="_blank" class="footer__link link--viber link--viber--mobile"><i class="fab fa-viber"></i></a>
 						</li>
 						<li class="footer__item">
-							<a href="mailto:auroradevelopment9@gmail.com" target="_blank" class="footer__link link--google"><i class="fab fa-google"></i></a>
+							<a title="GMAIL" href="mailto:auroradevelopment9@gmail.com" target="_blank" class="footer__link link--google"><i class="fab fa-google"></i></a>
 						</li>
 					</ul>
 				</div>
@@ -359,15 +360,55 @@
 
 	
 
+	<div class="modal fade sss show" tabindex="-1" role="dialog" aria-labelledby="Send" aria-hidden="true">
+	    <div class="modal-dialog">
+		    <div class="modal-content">
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="col-lg-6 modal__img-container">
+		    				<div class="modal__img">
+		    					<img class="modal__img-gif" src="images/modal-gif.gif" alt="Gif">
+		    					<img class="modal__img-bg" src="images/modal_img-bg.png" alt="iMac">
+		    				</div>
+		    			</div>
+		    			<div class="col-lg-4 offset-lg-2 modal__content">
+		    				<div class="modal__logo">
+		    					<img src="images/modal-logo.png" alt="Logo">
+		    				</div>
+		    				<div class="modal__form">
+		    					<div class="form__item form__item-name">
+		    						<input class="form__user-name" type="text" maxlength="30" name="userName" form="userForm" tabindex="1" placeholder="Your name" required>
+		    					</div>
+		    					<div class="form__item form__item-number">
+		    						<input class="form__user-number" type="tel" maxlength="15" name="userNumber" form="userForm" tabindex="2" placeholder="Your phone number" required>
+		    					</div>
+		    					<div class="form__item form__item-mail">
+		    						<input class="form__user-mail" type="email" maxlength="30" name="userMail" form="userForm" tabindex="3" placeholder="Your email address" required>
+		    					</div>
+		    					<div class="form__item form__item-order">
+		    						<textarea class="form__user-order" type="text" maxlength="300" rows="7" name="userOrder" form="userForm" tabindex="4" placeholder="About Your order" required></textarea>
+		    					</div>
+		    					<div class="form__btn">
+		    						<div class="form__btn-container">
+		    							<input class="form__user-btn" type="submit" form="userForm" value="Send">
+		    							<div class="form__user-btn__ico">
+		    								<i class="fab fa-telegram-plane"></i>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				
+	    					
+	    					
+	    					
 
-
-
-	<div class="modal fade sss" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-lg">
-	    <div class="modal-content">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem deleniti, tempora saepe tenetur exercitationem accusantium? Illum iste voluptates, beatae, accusantium molestias aut cupiditate aperiam placeat, porro quo magni quasi alias officiis. Dolores adipisci quisquam, dolorum veniam repudiandae aliquam sapiente? Atque possimus nulla corrupti, nisi molestias repellendus excepturi ea qui quas. Quo hic dolorum, repellendus pariatur, fugiat, modi reprehenderit laborum itaque optio repudiandae, beatae dolor mollitia voluptate. Accusamus suscipit repellat qui. Aliquid quibusdam recusandae excepturi libero ullam, molestiae doloremque, culpa optio ut, accusamus provident numquam. Beatae aperiam sint, adipisci repellat dignissimos, tempora eos minus. Sint eveniet, ipsam. Nemo temporibus, distinctio in dolorem amet iste illo, sit! Mollitia atque, optio, rerum dolorum rem deleniti corrupti, pariatur amet vitae labore alias voluptatum. Ex velit suscipit soluta, quia qui unde accusantium aperiam veniam? Deserunt, dolore, saepe. Blanditiis ea quae, quo quas a impedit voluptas et culpa praesentium mollitia vitae aut molestias. Facilis quo voluptatem similique officiis tempora temporibus exercitationem eveniet ipsam id impedit cumque soluta quibusdam, ullam laboriosam, inventore aliquid fugit blanditiis enim tenetur alias. Nesciunt amet, beatae, modi incidunt totam explicabo placeat ut qui est rerum enim, molestiae facilis commodi nemo rem. Quibusdam, reiciendis officia nemo vitae est. Asperiores dignissimos veritatis quos! Officia molestias harum animi ducimus, adipisci, architecto at voluptatem consequuntur perferendis possimus, quasi sunt voluptatibus iure. Velit aliquam a error ipsam nihil, officia corrupti suscipit, voluptate culpa! Facere molestias amet sunt ut dicta fuga accusamus quidem sapiente laudantium cum, ab quis quibusdam nemo esse illo maxime, porro, unde sed eaque quasi neque et culpa veniam! Tenetur, voluptas fuga atque a possimus! Doloribus recusandae corporis deleniti assumenda explicabo voluptatum esse rerum dolor sunt praesentium animi, debitis perspiciatis vero quo error et, possimus, inventore. Facere obcaecati at, esse vero ut, quos similique voluptatibus, natus pariatur illo, eligendi earum! Rerum excepturi dolore sapiente, at culpa deleniti voluptas omnis a quaerat vero facere necessitatibus aliquid saepe cupiditate eveniet, officiis! Eius asperiores, optio molestias nesciunt ex voluptate eaque quibusdam perferendis molestiae, possimus deserunt sit dolor corrupti! Amet doloribus delectus illo reprehenderit veritatis voluptas ipsum minus repellendus vitae, quod repudiandae modi sit dolore, autem cum, et aut explicabo libero asperiores, facilis provident animi voluptates. Ab vitae, voluptatum consequuntur rem excepturi animi ex culpa eius perspiciatis, ipsam officiis nesciunt modi, ullam quibusdam commodi! Adipisci recusandae placeat quod velit? Nobis adipisci dicta, eveniet nisi voluptates nulla omnis placeat quia in perferendis officiis assumenda laboriosam modi impedit eum! Necessitatibus enim voluptates pariatur non veniam dolores voluptas beatae fugiat iure iusto incidunt sint in error tempora libero consectetur minus, perferendis alias? Pariatur, a doloribus quia nesciunt tempore sapiente, quaerat consequuntur libero beatae error accusantium voluptatum ipsum non quasi ipsam quo, aliquam ut aliquid! Nemo, veniam. Tenetur assumenda, quia voluptas ullam, modi libero quibusdam tempora illum, excepturi dignissimos veritatis ut voluptates asperiores qui expedita consectetur autem! Ab tempore, animi, quo eveniet iste fuga velit quasi vitae est. Beatae dignissimos qui, assumenda animi accusantium ea consequuntur necessitatibus, libero suscipit culpa fugiat, ut eveniet blanditiis! Itaque numquam rem veniam molestias nobis molestiae corrupti sapiente sed cumque, corporis at obcaecati incidunt ex totam id? Ad minus quis asperiores illo quas, commodi laudantium debitis eaque, recusandae nisi deserunt pariatur, nobis! Recusandae voluptatibus culpa minima eos suscipit neque quae, ipsam fuga tenetur vel porro dicta ea, amet soluta odit quo delectus fugit beatae vitae nostrum dolore pariatur, magni! Commodi debitis, reiciendis quas, quae soluta atque veniam voluptates numquam dolorem maiores et id odit cum eveniet expedita nisi accusantium quo earum velit in! Sequi odit fugit voluptas sint harum incidunt totam laboriosam omnis nobis alias ipsum possimus, deleniti qui tempore quasi nam, veniam vel dicta quia esse. Quaerat expedita sit nihil illum nisi quasi maiores veritatis tempora laboriosam at, earum officia quo sed dolor, voluptas dolorem laudantium, facere praesentium. Debitis accusantium, animi vel illo mollitia provident tempore, aperiam sed dolore natus veritatis. Quos ratione est laboriosam nemo vero officia, voluptatum nobis inventore explicabo. Nam dolore dignissimos asperiores itaque similique nihil inventore ad repellat excepturi, explicabo mollitia repudiandae adipisci eum tempora labore libero quam consequuntur, aut pariatur enim. Sed repudiandae tempore iusto, perspiciatis rerum consequuntur numquam sequi. Ex nisi laboriosam, amet magnam sapiente, qui eaque consequuntur veritatis ad maxime ducimus totam, illum in possimus. Vero sed sint error vitae distinctio, quasi perferendis soluta consectetur architecto voluptates facilis, earum animi. Possimus repellendus perferendis iusto hic molestiae ipsa harum, aut veniam numquam natus labore consequuntur et eum, laborum totam! Necessitatibus, ratione. Hic nostrum repellat odit facere nihil incidunt quam eaque ex, asperiores eum porro voluptas illum unde in dolores, dolorem quae? Eligendi recusandae porro cumque qui odit nesciunt et. Amet, porro unde officia, dicta adipisci repudiandae vel exercitationem doloremque cupiditate quis recusandae provident officiis perferendis, ipsam possimus sapiente ex alias sint repellat soluta explicabo! Fuga quisquam ut commodi facilis animi possimus, cupiditate amet error eum atque numquam nesciunt provident nam tenetur voluptatum porro necessitatibus facere officia sequi. Natus voluptate exercitationem iusto doloribus minus veritatis sit aliquid nihil obcaecati debitis aliquam sint, magnam provident nemo mollitia temporibus est. Vel ipsa fugit error officia ea a est eius at, aspernatur ex dolorem voluptatibus. Rerum distinctio, accusantium, veritatis beatae animi id atque dolores fugit possimus quidem adipisci amet tenetur, dolorum quam corrupti modi eveniet voluptate ducimus maiores. Hic blanditiis quis explicabo facilis perspiciatis assumenda inventore aspernatur a! Animi maiores rem quibusdam, adipisci placeat ipsum libero nesciunt quas dolores incidunt sunt id aliquam molestias cum eum iusto et deserunt maxime perspiciatis possimus natus, officia odit, esse laborum deleniti! Dolorem ullam reprehenderit porro maxime praesentium facere minima, in nemo ratione velit unde modi nostrum repellendus aspernatur. Saepe reprehenderit natus atque inventore praesentium accusamus voluptate facere numquam commodi assumenda ipsum accusantium recusandae id unde nam quam ullam, voluptates itaque fugit hic. Ex cumque, neque, quasi animi iure nostrum ipsam, itaque error voluptatibus maxime ratione tempora vitae at quaerat voluptas. Nemo sapiente labore quidem odio, non praesentium hic consequuntur nobis sit perspiciatis error, rerum? Vitae, suscipit enim. In libero laudantium illo quos, omnis beatae nobis, non dolor eius voluptates fugit itaque iusto saepe tempora, tenetur amet quis veritatis.
+	    					
+		    				<form id="userForm" action="" method="post"></form>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
 	    </div>
-	  </div>
 	</div>
 
 

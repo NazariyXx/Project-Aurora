@@ -45,6 +45,9 @@
 		}
 		&--viber {
 			background-color: #8f5db7;
+			&--mobile {
+				display: none;
+			}
 		}
 		&--google {
 			background-color: #DB4437;
@@ -52,6 +55,19 @@
 	}
 	&__item {
 		&:not(:last-child) {margin-right: 80px;}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.footer {
+		.link--viber {
+			display: none;
+		}
+		&__item {
+			.link--viber--mobile {
+				display: flex;
+			}
+		}
 	}
 }
 

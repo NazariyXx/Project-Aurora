@@ -16,6 +16,7 @@
 	}
 	&__container {
 		position: relative;
+		height: 384px;
 		border: 3px solid #DFDFDF;
 		margin-top: 20px;
 		overflow-y: scroll;
@@ -79,6 +80,9 @@
 }
 @media screen and (max-width: 575px) {
 	.projects {
+		&__container {
+			height: 135px;
+		}
 		&__type {
 			&__list {
 				width: 50%;
@@ -107,4 +111,3 @@
 		}
 	}
 }
-/*9*/
