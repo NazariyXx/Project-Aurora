@@ -352,7 +352,7 @@ input::-webkit-inner-spin-button {
 .how-work__drops--small {
   display: none;
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
 }
 .how-work__headline {
