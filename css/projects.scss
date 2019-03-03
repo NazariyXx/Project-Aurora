@@ -16,7 +16,7 @@
 	}
 	&__container {
 		position: relative;
-		height: 384px;
+		height: 402px;
 		border: 3px solid #DFDFDF;
 		margin-top: 20px;
 		overflow-y: scroll;
@@ -47,6 +47,7 @@
 	}
 	&__img {
 		width: 100%;
+		height: 100%;
 	}
 	.show {
 		display: block;
@@ -59,7 +60,7 @@
 @media screen and (max-width: 1199px) {
 	.projects {
 		&__container {
-			height: 324px;
+			height: 340px;
 		}
 	}
 }
@@ -67,7 +68,7 @@
 @media screen and (max-width: 991px) {
 	.projects {
 		&__container {
-			height: 244px;
+			height: 254px;
 		}
 		&__type {
 			&:not(:last-child) {

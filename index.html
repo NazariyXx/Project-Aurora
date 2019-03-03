@@ -77,7 +77,7 @@
 						<p>SEO</p>
 					</div>
 					<div class="clickbait__btn order-btn">
-						<button class="clickbait__button" data-toggle="modal" data-target=".sss">order a site</button>
+						<button class="clickbait__button" data-toggle="modal" data-target=".modal--form">order a site</button>
 					</div>
 				</div>
 			</div>
@@ -184,35 +184,35 @@
 					<li class="projects__type">
 						<button id="btn-website" class="projects__btn">website</button>
 					</li>
-					<li class="projects__type">
+					<!-- <li class="projects__type">
 						<button id="btn-blog" class="projects__btn">blog</button>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 			<div class="row projects__container">
 				<div class="col-md-4 col-6 projects__item landing show">
-					<a href="portfolio/project_smart_city/index.html" class="projects__link">
-						<img class="projects__img" src="images/portfolio/smart_city.jpg" alt="proj" class="projects__img">
+					<a href="portfolio/project_smart_city/index.html" target="_blank" class="projects__link">
+						<img class="projects__img" src="images/portfolio/smart_city-landing.jpg" alt="proj" class="projects__img">
 					</a>
 				</div>
 				<div class="col-md-4 col-6 projects__item website show">
-					<a href="portfolio/project_shopy/index.html" class="projects__link">
-						<img class="projects__img" src="images/portfolio/shopy.jpg" alt="proj" class="projects__img">
+					<a href="portfolio/project_shopy/index.html" target="_blank" class="projects__link">
+						<img class="projects__img" src="images/portfolio/shopy-website.jpg" alt="proj" class="projects__img">
 					</a>
 				</div>
 				<div class="col-md-4 col-6 projects__item logo show">
-					<a href="portfolio/project_smart_city/images/technology.jpg" class="projects__link">
-						<img class="projects__img" src="images/project_logo_aurora.jpeg" alt="proj" class="projects__img">
+					<a href="images/portfolio/ss-logo.png" class="projects__link" target="_blank">
+						<img class="projects__img" src="images/portfolio/ss-logo.png" alt="proj" class="projects__img">
 					</a>
 				</div>
 				<div class="col-md-4 col-6 projects__item logo show">
-					<a href="#" class="projects__link">
-						<img class="projects__img" src="images/project_logo_aurora.jpeg" alt="proj" class="projects__img">
+					<a href="images/portfolio/aurora-logo.jpeg" target="_blank" class="projects__link">
+						<img class="projects__img" src="images/portfolio/aurora-logo.jpeg" alt="proj" class="projects__img">
 					</a>
 				</div>
 				<div class="col-md-4 col-6 projects__item landing show">
-					<a href="#" class="projects__link">
-						<img class="projects__img" src="images/project_landing_aurora.jpeg" alt="proj" class="projects__img">
+					<a href="index.html" class="projects__link" target="_blank">
+						<img class="projects__img" src="images/portfolio/aurora-landing.jpeg" alt="proj" class="projects__img">
 					</a>
 				</div>
 			</div>
@@ -314,7 +314,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="order-btn">
-						<button class="footer__btn" data-toggle="modal" data-target=".sss">order a site</button>
+						<button class="footer__btn" data-toggle="modal" data-target=".modal--form">order a site</button>
 					</div>
 				</div>
 			</div>
@@ -345,7 +345,7 @@
 
 	
 
-	<div class="modal fade sss show" tabindex="-1" role="dialog" aria-labelledby="Send" aria-hidden="true">
+	<div class="modal fade modal--form show" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="Send" aria-hidden="true">
 	    <div class="modal-dialog">
 		    <div class="modal-content">
 		    	<div class="container">
@@ -358,7 +358,9 @@
 		    			</div>
 		    			<div class="col-lg-4 offset-lg-2 modal__content">
 		    				<div class="modal__logo">
-		    					<img src="images/modal-logo.png" alt="Logo">
+		    					<a href="index.html">
+		    						<img src="images/modal-logo.png" alt="Logo">
+		    					</a>
 		    				</div>
 		    				<div class="modal__form">
 		    					<div class="form__item form__item-name">
@@ -384,10 +386,10 @@
 		    			</div>
 		    		</div>
 		    	</div>
+		    	<i class="fas fa-times modal__exit" id="modalExit"></i>
 		    </div>
 	    </div>
 	</div>
-
 
 
 

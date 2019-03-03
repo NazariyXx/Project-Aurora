@@ -1,8 +1,8 @@
 /* MODAL */
 .modal {
+	cursor: pointer;
 	background-color: #000;
 	// gif
-
 	&__img {
 		position: relative;
 		display: inline-block;
@@ -26,11 +26,13 @@
 	}
 
 	&-dialog {
-		max-width: 90vw;
+		cursor: default;
+		max-width: 100vw;
+		margin: 1.75em;
 	}
 	&-content {
 		height: auto;
-		min-height: 90vh;
+		min-height: 100vh;
 		padding: 0 !important;
 		border-radius: 140px;
 		background: url("../images/modal-bg.png") 50% 50% no-repeat;
@@ -109,10 +111,29 @@
 		&__user-mail {width: 90%;}
 		&__user-order {width: 100%;}
 	}
+	&__exit {
+		cursor: pointer;
+		position: absolute;
+		top: -15px;
+		right: 0;
+		font-size: 40px;
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.modal {
+		.container {
+			margin-top: 70px;
+		}
+	}
 }
 
 @media screen and (max-width: 575px) {
 	.modal {
+		&-content {
+			border-radius: 105px;
+		}
 		&-dialog {
 			max-width: 100vw;
 		}

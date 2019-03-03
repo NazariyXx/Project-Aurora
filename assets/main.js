@@ -68,7 +68,6 @@ $(document).ready(function() {
 	changesClasses(getLogo, 'logo');
 	changesClasses(getLanding, 'landing');
 	changesClasses(getWebsite, 'website');
-	changesClasses(getBlog, 'blog');
 
 //  ----- SCROLL TO TOP -----
 	let scrollPosition = window.pageYOffset,
@@ -81,5 +80,13 @@ $(document).ready(function() {
 		} else {
 			upToTopBlock[0].style.bottom = '-60px';
 		};
+	};
+
+//  ----- HIDE MODAL -----
+	let modalExit = $('#modalExit'),
+		modalForm = $("#modalForm");
+
+	modalExit.onclick = function() {
+		modalForm.modal("hide");
 	};
 });
