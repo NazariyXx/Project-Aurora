@@ -83,7 +83,7 @@ $(document).ready(function() {
 	};
 
 //  ----- HIDE MODAL -----
-	let modalExit = $('#modalExit'),
+	let modalExit = document.getElementById("modalExit"),
 		modalForm = $("#modalForm");
 
 	modalExit.onclick = function() {
